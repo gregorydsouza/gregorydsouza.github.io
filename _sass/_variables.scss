@@ -1,10 +1,9 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #4183c4;
 
 // Grays
 $black: #000;
@@ -14,6 +13,13 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+// Custom Defaults
+$bgDefault: #222222;
+$textDefault: #f3efe0;
+$subtitle: #e1ddd0;
+$linksDefault: #22a39f;
+$linksHighlight: #2fc4bf;
+
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,7 +27,7 @@ $georgia: Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
+	@media screen and (max-width: 640px) {
+		@content;
+	}
 }
