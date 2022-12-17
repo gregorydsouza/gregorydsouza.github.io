@@ -14,8 +14,8 @@
 /**************/
 
 // Import fonts
-// Currently have Nunito, Open Sans, Roboto, JetBrains Mono
-@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Roboto&family=JetBrains+Mono");
+// Currently have Nunito, Open Sans, Roboto, JetBrains Mono, Noto Serif
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Roboto&family=JetBrains+Mono&family=Noto+Serif");
 
 html {
 	font-size: 100%;
@@ -389,13 +389,14 @@ nav {
 
 .post {
 	blockquote {
-		margin: 1.8em 0.8em;
-		/*border-left: 2px solid $gray;*/
+		margin: 1.8em 0;
+		border-left: 4px solid $gray;
 		padding: 0.1em 1em;
 		color: $textDefault;
-		font-size: 22px;
-		font-style: italic;
-		background-color: #ede1ff;
+		font-size: 18px;
+		// font-style: italic;
+		font-family: "Noto Serif", serif;
+		background-color: $bgDefault;
 	}
 
 	.you-may-like {
@@ -441,19 +442,19 @@ footer {
 }
 
 body:after {
-	    background: linear-gradient(
+	background: linear-gradient(
 		to right,
 		#ffffff 0,
 		#2196f3 33%,
 		#e91e63 66%,
 		#000 100%
 	);
-	    width: 100%;
-	    height: 5px;
-	    top: 0;
-	    position: absolute;
-	    left: 0;
-	    content: "";
+	width: 100%;
+	height: 5px;
+	top: 0;
+	position: absolute;
+	left: 0;
+	content: "";
 }
 
 #bar {
