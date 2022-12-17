@@ -4,6 +4,8 @@ title: Eigenvalues and Eigenvectors
 categories: [Math, Linear Algebra]
 ---
 
+Eigenvalues and Eigenvectors are extremely useful tools that have a variety of uses including image processing, vibration analysis, stress tensor, and even the basic reproduction number used in the study of how diseases are spread.
+
 ## What are Eigenvalues and Eigenvectors?
 
 Suppose the matrix $\textbf{A}$ represents a transformation. An eigenvector is a vector such that, after the transformation $\textbf{A}$ is applied to it, its direction does not change.
@@ -102,7 +104,7 @@ $$
 \left[\begin{array}{c c | c} 1 & 6 & 0 \\ 6 & 36 & 0 \\ \end{array}\right]
 $$
 
-Which can be solved by various methods such as Gaussian elimination or Gauss-Jordan elimination. You will find the values of the two unknowns $x_1$ and $x_2$, which are your components for the eigenvector, because we defined:
+Which can be solved by various methods such as [Gaussian Elimination]({{ site.baseurl }}{% post_url 2022-12-16-Solving-a-System-of-Linear-Equations %}#gaussian-elimination) or [Gauss-Jordan Elimination]({{ site.baseurl }}{% post_url 2022-12-16-Solving-a-System-of-Linear-Equations %}#gauss-jordan-elimination). You will find the values of the two unknowns $x_1$ and $x_2$, which are your components for the eigenvector, because we defined:
 
 $$
 \textbf{v}=\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
