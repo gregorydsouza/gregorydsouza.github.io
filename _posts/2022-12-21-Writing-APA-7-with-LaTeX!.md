@@ -22,14 +22,14 @@ It basically just installs the TeXLive distribution without the gazillion packag
 
 You'll first need to install the following packages and all their dependencies:
 
-- BibLaTeX
-- Biber
-- biblatex-apa
-- latex-graphics
-- apa7
-- threeparttable
-- float
-- lipsum (Optional: it allows you to auto-generate Lorem Ipsum placeholder text)
+-   BibLaTeX
+-   Biber
+-   biblatex-apa
+-   latex-graphics
+-   apa7
+-   threeparttable
+-   float
+-   lipsum (Optional: it allows you to auto-generate Lorem Ipsum placeholder text)
 
 As of right now, BibTeX only supports up to APA 6 references and citations. The only bibliography generator that supports APA 7 is Biber with BibLaTeX.
 
@@ -68,30 +68,31 @@ Now we'll just have to insert some boilerplate for the APA 7 document. For stude
 ```
 
 Let's dive into each of those lines.
-- `\documentclass[12pt,stu,hidelinks]{apa7}`
-	- Defines the document class
-	- Font size `12pt`
-	- `stu` means its a student paper
-		- use `jou` for a printed journal appearance
-		- use `man` for a journal submission document
-		- use `doc` for just a typical LaTeX document appearance
-	- `hidelinks` will remove the colored boxes that LaTeX will keep drawing around every single citation and reference in your paper. They will still be hyperlinked to the reference page, just no annoying box.
-- `\usepackage[style=apa]{biblatex}`
-	- Uses the BibLaTeX bibliography manager
-	- Tells it to format in APA 7 style
-		- use `apa6` for APA 6 style
-- `\addbibresource{apa7-student.bib}`
-	- Load the bibliography file. Replace `apa7-student.bib` with the actual filename of your bibliography file
-- The next set of lines just put all the details required for the title page
-	- Read more [here](https://mirror.niser.ac.in/ctan/macros/latex/contrib/apa7/apa7.pdf)
-- `\abstract{}`
-	- Text that goes in the abstract should be put within here.
-	- If you don't need an abstract just delete this line
-- `\begin{document}` and `\end{document}`
-	- This is where the content of your entire paper will be placed
-- `section{}`
-	- Creates a heading, will automatically format into APA 7 style
-	- Use `\subsection{}` and `\subsubsection{}` as needed for subsections
+
+-   `\documentclass[12pt,stu,hidelinks]{apa7}`
+    -   Defines the document class
+    -   Font size `12pt`
+    -   `stu` means its a student paper
+        -   use `jou` for a printed journal appearance
+        -   use `man` for a journal submission document
+        -   use `doc` for just a typical LaTeX document appearance
+    -   `hidelinks` will remove the colored boxes that LaTeX will keep drawing around every single citation and reference in your paper. They will still be hyperlinked to the reference page, just no annoying box.
+-   `\usepackage[style=apa]{biblatex}`
+    -   Uses the BibLaTeX bibliography manager
+    -   Tells it to format in APA 7 style
+        -   use `apa6` for APA 6 style
+-   `\addbibresource{apa7-student.bib}`
+    -   Load the bibliography file. Replace `apa7-student.bib` with the actual filename of your bibliography file
+-   The next set of lines just put all the details required for the title page
+    -   Read more [here](https://mirror.niser.ac.in/ctan/macros/latex/contrib/apa7/apa7.pdf)
+-   `\abstract{}`
+    -   Text that goes in the abstract should be put within here.
+    -   If you don't need an abstract just delete this line
+-   `\begin{document}` and `\end{document}`
+    -   This is where the content of your entire paper will be placed
+-   `section{}`
+    -   Creates a heading, will automatically format into APA 7 style
+    -   Use `\subsection{}` and `\subsubsection{}` as needed for subsections
 
 ## APA Style Tables
 
