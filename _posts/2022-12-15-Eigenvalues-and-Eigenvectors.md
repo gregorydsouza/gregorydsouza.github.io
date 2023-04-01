@@ -70,7 +70,7 @@ $$
 (\textbf{A}-\lambda\textbf{I})\textbf{v}=0
 $$
 
-Where $\textbf{A}$ is the matrix, $\textbf{v}$ is the eigenvector, $\lambda$ is its corresponding eigenvalue, and $\textbf{I}$ is the [identity matrix]([Identity matrix - Wikipedia](https://en.wikipedia.org/wiki/Identity_matrix)) with same dimensions as $\textbf{A}$.
+Where $\textbf{A}$ is the matrix, $\textbf{v}$ is the eigenvector, $\lambda$ is its corresponding eigenvalue, and $\textbf{I}$ is the [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix) with same dimensions as $\textbf{A}$.
 
 For example, let's find the eigenvector corresponding to $\lambda_{1}$. First, we'll calculate the value of $\textbf{A}-\lambda\textbf{I}$:
 
