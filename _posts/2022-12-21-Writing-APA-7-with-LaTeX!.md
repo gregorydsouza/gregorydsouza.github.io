@@ -40,6 +40,9 @@ Now we'll just have to insert some boilerplate for the APA 7 document. For stude
 ```latex
 \documentclass[12pt, stu, hidelinks]{apa7}
 
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
 \usepackage[style=apa]{biblatex}
 \addbibresource{apa7-student.bib}
 
@@ -77,6 +80,9 @@ Let's dive into each of those lines.
         -   use `man` for a journal submission document
         -   use `doc` for just a typical LaTeX document appearance
     -   `hidelinks` will remove the colored boxes that LaTeX will keep drawing around every single citation and reference in your paper. They will still be hyperlinked to the reference page, just no annoying box.
+-   `\usepackage{newtxtext}` and `\usepackage{newtxmath}`
+    -   Use these packages to get the Times Roman font in your papers for both text and math.
+    -   `newtx` is the newer and preferred package, but there are older implementations such as the `times` + `mathptmx` packages. Feel free to use whichever you like.
 -   `\usepackage[style=apa]{biblatex}`
     -   Uses the BibLaTeX bibliography manager
     -   Tells it to format in APA 7 style
@@ -120,3 +126,17 @@ Creating an APA style table is pretty simple using the `threeparttable` package:
 Declare the `\toprule` command before you all the entries you want included in the table head. Then `\midrule` for the main body of the table, and finally `\bottomrule` for the end of the table, total results or conclusions.
 
 Using the `threeparttable` package, this will automatically render as a beautiful APA style table!
+
+## Creating and Citing Figures
+
+Creating figures requires a little bit of work. First you'll need to move the image file that you wish to use in your figure into the same directory as your TeX document. Putting it into a subfolder also works, as we will be addressing the file by its relative path.
+
+Then, we'll create a LaTeX figure using the following code:
+
+```latex
+\begin{figure}[H]
+	\makebox[\textwidth]{\includegraphics[width=0.8\paperwidth]{image_path.jpg}}
+	\caption{Name of the Figure}
+	\label{fig:NameUsedForCitation}
+\end{figure}
+```
