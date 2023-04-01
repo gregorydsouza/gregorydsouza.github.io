@@ -130,16 +130,16 @@ $$
 \mathcal{L}\left[x^{\prime\prime}\right](s) + \mathcal{L}\left[x\right](s) = \mathcal{L}\left[\cos(t)\right](s)
 $$
 
-I have used a different notation here. Instead of $\mathcal{L}\{f(t)\}$, I'm using $\mathcal{L}[f(t)](s)$. This notation also shows the independent variable of the new function produced by the Laplace transform.
+I have used a different notation here. Instead of $\mathcal{L}\{f(t)\}$, I'm using $\mathcal{L} [f(t)] (s)$. This notation also shows the independent variable of the new function produced by the Laplace transform.
 
-Since the Laplace transform creates a new function from its input, we defined that new function as $F(s)$. Following that convention, we could define $\mathcal{L}\left[x(t)\right](s) = X(s)$.
+Since the Laplace transform creates a new function from its input, we defined that new function as $F(s)$. Following that convention, we could define $\mathcal{L} \left[ x(t) \right] (s) = X(s)$.
 
-However, what does $\mathcal{L}\left[x^{\prime\prime}(t)\right](s)$ become then? Well, let us first look over the general Laplace transform for these functions.
+However, what does $\mathcal{L} \left[ x^{\prime\prime}(t) \right] (s)$ become then? Well, let us first look over the general Laplace transform for these functions.
 
 Suppose $f(t)$ and all its derivatives $f^{\prime}(t),f^{\prime\prime}(t),f^{\prime\prime\prime}(t)\cdots$ are continuous functions, then the Laplace transform of the $\text{n}^{\text{th}}$ derivative is given by:
 
 $$
-\mathcal{L}\left\{ {{f^{\left( n \right)}}} \right\} = {s^n}F\left( s \right) - {s^{n - 1}}f\left( 0 \right) - {s^{n - 2}}f'\left( 0 \right) -  \cdots  - s{f^{\left( {n - 2} \right)}}\left( 0 \right) - {f^{\left( {n - 1} \right)}}\left( 0 \right)
+\mathcal{L} \left\{ f^{(n)} \right\} = {s^n}F(s) - {s^{n - 1}}f \left( 0 \right) - {s^{n - 2}}f' \left( 0 \right) \; \cdots \; s{f^{ (n - 2) }} \left( 0 \right) - {f^{ \left( {n - 1} \right) }} \left( 0 \right)
 $$
 
 Therefore:
