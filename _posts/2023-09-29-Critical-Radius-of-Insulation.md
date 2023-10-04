@@ -6,7 +6,7 @@ categories: [Heat Transfer]
 
 Consider a pipe with a fluid that you are trying to insulate, so that you can minimize the heat loss of the fluid flowing through the pipe.
 
-Depending on how low your requirement for heat loss, you might simply increase the thickness of the insulation around the pipe, however, this does not always yield the results you might be looking for.
+Depending on your requirement for heat loss, you might simply increase the thickness of the insulation around the pipe. However, this does not always yield the results you might be looking for.
 
 In fact, increasing the thickness of insulation around the pipe may actually work against your goal, cooling down the fluid more efficiently. This is because the rate of heat transfer $\dot{Q}$ of the pipe actually has two competing properties when changing the thickness of the insulation. Assume we are increasing the thickness of insulation, then:
 
@@ -17,7 +17,9 @@ It is important that we know how to setup our insulation such that we can maximi
 
 # Definition of the Critical Radius
 
-There exists a point where the two competing properties listed earlier balance each other out, which we call the critical radius:
+These two competing properties do not vary linearly, and there exists a point where they balance each other out, which we call the critical radius.
+
+Let us consider the fluid flow example from earlier with its insulation at the critical radius, illustrated as follows:
 
 ![](/images/CriticalRadius/PipeDiagram1.svg)
 
@@ -90,8 +92,10 @@ $$
 \frac{d R_{total}}{d r_{cr}} = \frac{1}{2\pi kL} \frac{r_1}{r_{cr}} \frac{1}{r_1} - \frac{1}{2\pi Lh} \left( \frac{1}{r_{cr}} \right)^2 = 0
 $$
 
+Solving this equation for $r_{cr}$ yields:
+
 $$
-\therefore r_{cr} = \frac{k}{h}
+r_{cr} = \frac{k}{h}
 $$
 
 Nice! It evaluates into a small and easy to compute equation! However, we need to understand what specific conditions occur at this value and how we can make use of them.
@@ -103,12 +107,16 @@ When the outer edge of the insulation around the pipe is at the critical radius:
 
 ## Applying the critical radius concept
 
-The example used in this article discusses how you would like to minimize the rate of heat loss of the fluid in the pipe, in which case you want to have a radius of insulation smaller that the critical radius.
+The example used in this article discusses how you would like to minimize the rate of heat loss of the fluid in the pipe, in which case you want to have a radius of insulation larger than the critical radius.
 
-However, note that having a radius of insulation greater than the critical radius is also desirable in other scenarios, such as a wire. Electrical wires carrying large currents get hot, and so it helps to setup wire insulation such that you can maximize the heat loss of the wire.
+However, note that having a radius of insulation less than or equal to the critical radius is also desirable in other scenarios, such as a wire. Electrical wires carrying large currents get hot, and so it helps to setup wire insulation such that you can maximize the heat loss of the wire.
 
 It is helpful to graph out these functions to understand how they vary:
 
-<iframe src="https://www.desmos.com/calculator/hxstrnqgwq?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/xht72m2lla?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 The red line represents the change in thermal resistance as the radius of insulation increases, while the purple line represents the change in heat transfer as the radius of insulation increases.
+
+We notice that at the critical radius, the heat loss for the system is at its maximum, and the thermal resistance is at its minimum.
+
+Therefore, the most efficient cooling of the system is achieved at the critical radius.
