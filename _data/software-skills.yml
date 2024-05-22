@@ -1,0 +1,15 @@
+- name: OpenSim
+  percentage: 94
+  color: success
+
+- name: Git & GitHub
+  percentage: 99
+  color: warning
+
+- name: SolidWorks
+  percentage: 90
+  color: danger
+
+- name: MATLAB
+  percentage: 99
+  color: primary

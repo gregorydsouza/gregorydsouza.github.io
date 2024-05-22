@@ -1,0 +1,23 @@
+- name: Biomechanics
+  percentage: 95
+  color: success
+
+- name: Numerical Methods
+  percentage: 98
+  color: warning
+
+- name: Machine Design
+  percentage: 92
+  color: primary
+
+- name: Heat Transfer
+  percentage: 97
+  color: danger
+
+- name: Material Science
+  percentage: 92
+  color: info
+
+- name: Mechanical Vibrations
+  percentage: 87
+  color: primary
