@@ -49,3 +49,15 @@ If you have a project that aligns with my skills and interests, I'd love to conn
 <a href="https://courses.edx.org/certificates/39c9f5e6ef21494e885b65a36ae47ec1">Verify the certificate here</a>
 
 </details>
+
+<br>
+<img src="/images/SimpleIcons/AHA-color.png" width="24px" align="left" style="margin-right: 10px;">
+<details>
+
+<summary>Heartsaver CPR & AED</summary>
+
+<img src="/images/Certificates/Gregory_Dsouza_CPR_Heartsaver_20Sep2022.jpg" />
+
+<a href="https://ecards.heart.org/student/myecards">Verify the certificate here</a> (eCard number: 225698649176)
+
+</details>
