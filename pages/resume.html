@@ -5,13 +5,72 @@ permalink: /resume/
 weight: 4
 ---
 
-<head>
-	<meta
-		http-equiv="REFRESH"
-		content="0; url={% link documents/Gregory_Dsouza_Resume.pdf %}"
-	/>
-</head>
-
 <body>
-	Redirecting to Résumé...
+	<a href="{% link documents/Gregory_Dsouza_Resume.pdf %}">Download Résumé</a>
+	<div style="min-height: 8px"></div>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.min.mjs"
+		type="module"
+	></script>
+
+	<script type="module">
+		// If absolute URL from the remote server is provided, configure the CORS
+		// header on that server.
+		var url = "{% link documents/Gregory_Dsouza_Resume.pdf %}";
+
+		// Loaded via <script> tag, create shortcut to access PDF.js exports.
+		var { pdfjsLib } = globalThis;
+
+		// The workerSrc property shall be specified.
+		pdfjsLib.GlobalWorkerOptions.workerSrc =
+			"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.worker.mjs";
+
+		// Asynchronous download of PDF
+		var loadingTask = pdfjsLib.getDocument(url);
+		loadingTask.promise.then(
+			function (pdf) {
+				console.log("PDF loaded");
+
+				// Fetch the first page
+				var pageNumber = 1;
+				pdf.getPage(pageNumber).then(function (page) {
+					console.log("Page loaded");
+
+					var scale = 7;
+					var viewport = page.getViewport({ scale: scale });
+
+					// Prepare canvas using PDF page dimensions
+					var canvas = document.getElementById("resume-canvas");
+					var context = canvas.getContext("2d");
+					canvas.height = viewport.height;
+					canvas.width = viewport.width;
+
+					// Render PDF page into canvas context
+					var renderContext = {
+						canvasContext: context,
+						viewport: viewport,
+						intent: "print",
+					};
+					var renderTask = page.render(renderContext);
+					renderTask.promise.then(function () {
+						console.log("Page rendered");
+					});
+				});
+			},
+			function (reason) {
+				// PDF loading error
+				console.error(reason);
+			}
+		);
+	</script>
+
+	<style>
+		#resume-canvas {
+			direction: ltr;
+			width: 100%;
+			height: auto;
+		}
+	</style>
+
+	<canvas id="resume-canvas"></canvas>
 </body>
