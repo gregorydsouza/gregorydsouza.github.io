@@ -2,6 +2,8 @@
 layout: post
 title: The Laplace Transform
 tags: [Math, Linear Algebra, Calculus]
+style: border
+color: primary
 ---
 
 The Laplace transform has many uses. We will discuss how it can be used to reduce a differential equation into a simple algebra problem that is usually easier to solve.

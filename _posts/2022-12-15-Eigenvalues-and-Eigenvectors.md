@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Eigenvalues and Eigenvectors
+title: Eigenvalues and Eigenvectors?
 tags: [Math, Linear Algebra]
+style: border
+color: info
 ---
 
 Eigenvalues and Eigenvectors are extremely useful tools that have a variety of uses including image processing, vibration analysis, stress tensor, and even the basic reproduction number used in the study of how diseases are spread.

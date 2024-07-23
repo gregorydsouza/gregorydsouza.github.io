@@ -2,6 +2,8 @@
 layout: post
 title: Critical Radius of Insulation
 tags: [Heat Transfer]
+style: border
+color: danger
 ---
 
 Consider a pipe with a fluid that you are trying to insulate, so that you can minimize the heat loss of the fluid flowing through the pipe.

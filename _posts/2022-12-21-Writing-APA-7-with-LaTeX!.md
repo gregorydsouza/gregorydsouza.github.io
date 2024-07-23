@@ -2,6 +2,8 @@
 layout: post
 title: Writing APA 7 with LaTeX!
 tags: [Programming, LaTeX]
+style: border
+color: warning
 ---
 
 I finally tried completing an entire assignment using just $\LaTeX{}$! Its an awesome typesetting tool, however, setting it up to write an APA 7 style document was quite a challenge.

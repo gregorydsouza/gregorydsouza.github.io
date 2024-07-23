@@ -2,6 +2,8 @@
 layout: post
 title: Solving Systems of Linear Equations
 tags: [Math, Linear Algebra]
+style: border
+color: success
 ---
 
 You've probably come across and solved plenty of simultaneous equations in high school. However, you probably only dealt with two equations at most. Today we'll explore one of the basic concepts of linear algebra; using matrices to solve a system of linear equations.
