@@ -28,36 +28,8 @@ If you have a project that aligns with my skills and interests, I'd love to conn
 
 # Certificates
 
-<br>
-<img src="/images/SimpleIcons/google-color.svg" width="24px" align="left" style="margin-right: 10px;">
-<details>
-<summary>Google IT Automation with Python</summary>
+<p><img src="/images/SimpleIcons/google-color.svg" width="24px" align="left" style="margin: 0px 10px 0px 0px;">Google IT Automation with Python</p>
 
-<img src="/images/Certificates/Google_IT_Automation_with_Python_Certificate.jpg" />
+<p><img src="/images/SimpleIcons/redhat-color.svg" width="24px" align="left" style="margin: 0px 10px 0px 0px;">Fundamentals of Red Hat Enterprise Linux</p>
 
-<a href="https://coursera.org/verify/professional-cert/QT52LJDY6J4M">Verify the certificate here</a>
-
-</details>
-<br>
-<img src="/images/SimpleIcons/redhat-color.svg" width="24px" align="left" style="margin-right: 10px;">
-<details>
-
-<summary>Fundamentals of Red Hat Enterprise Linux</summary>
-
-<img src="/images/Certificates/Certificate RH066x.png" />
-
-<a href="https://courses.edx.org/certificates/39c9f5e6ef21494e885b65a36ae47ec1">Verify the certificate here</a>
-
-</details>
-
-<br>
-<img src="/images/SimpleIcons/AHA-color.png" width="24px" align="left" style="margin-right: 10px;">
-<details>
-
-<summary>Heartsaver CPR & AED</summary>
-
-<img src="/images/Certificates/Gregory_Dsouza_CPR_Heartsaver_20Sep2022.jpg" />
-
-<a href="https://ecards.heart.org/student/myecards">Verify the certificate here</a> (eCard number: 225698649176)
-
-</details>
+<p><img src="/images/SimpleIcons/AHA-color.png" width="24px" align="left" style="margin: 0px 10px 0px 0px;">Heartsaver CPR & AED</p>
