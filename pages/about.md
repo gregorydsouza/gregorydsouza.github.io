@@ -22,6 +22,8 @@ If you have a project that aligns with my skills and interests, I'd love to conn
 {% include about/skills.html title="Programming Languages" source=site.data.programming-skills %}
 </div>
 
+# Experience
+
 <div class="row">
 {% include about/timeline.html %}
 </div>
