@@ -8,13 +8,13 @@ weight: 3
 # **About Me**
 
 Hi there! I'm **{{ site.author.name }}** :wave:,<br>
-a strong mechanical engineer able to optimize complex projects and find creative solutions using code.
+a multidisciplinary Mechanical Engineer with a passion for solving complex problems across robotics, biomechanics, computer graphics, and software systems. With a strong foundation in dynamics, machine design, numerical methods, and algorithms, I specialize in creating innovative and efficient solutions that bridge hardware and software.
 
-I have professional certifications in source control systems (such as Git) and Linux. I am in a Biomedical Systems track, and I'm experienced in many programming languages (including Python, C/C++, C#, and more) with a strong base in Dynamics, Biomechanics, Machine Design, Vibrations, Numerical Methods, and Algorithms.
+I’m proficient in a wide range of programming languages, including Python, C/C++, C#, Java, Ruby, JavaScript, HTML/CSS, GLSL, and HLSL. My experience spans biomedical systems, computer graphics and graphics programming, rapid prototyping, and adaptive biomechanical design to support paraplegics. I also bring hands-on expertise in VFX, video editing, image editing, web development, and creative media production.
 
-I have a special interest in humanoid robotics and prosthetics, and I'm currently seeking internships in robotics, biomedical engineering, and software systems.
+This multidisciplinary background enables me to think across domains, collaborate effectively with diverse teams, and approach technical challenges from unique, hybrid perspectives. It’s helped me become not just a problem solver—but a systems thinker who connects the dots between engineering, design, and storytelling.
 
-If you have a project that aligns with my skills and interests, I'd love to connect and discuss how I can contribute!
+I hold professional certifications in Git and Linux and am currently seeking internship opportunities in robotics, biomedical engineering, software development, computer graphics, and related fields. If you're working on a project that could benefit from an adaptable, creative, and technically grounded engineer, please reach out!
 
 <div class="row">
 {% include about/skills.html title="Technical Skills" source=site.data.technical-skills %}

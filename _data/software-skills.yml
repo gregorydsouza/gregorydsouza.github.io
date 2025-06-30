@@ -2,6 +2,10 @@
   percentage: 94
   color: success
 
+- name: ANSYS Mechanical
+  percentage: 96
+  color: info
+
 - name: Git & GitHub
   percentage: 99
   color: warning
